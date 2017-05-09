@@ -1,4 +1,4 @@
-# A simple makefile for LaTeX documents
+# A simple Makefile for LaTeX documents
 all: compile
 
 compile:
