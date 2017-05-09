@@ -1,0 +1,85 @@
+\documentclass[letterpaper,10pt]{article}
+\pdfoutput=1
+%\usepackage{usenix,epsfig}
+%\usepackage{epsfig}
+\usepackage{times}
+\usepackage{fullpage}
+\usepackage{mathptmx}
+\usepackage{ptmgreek}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{color}
+\usepackage{program}
+\usepackage{authblk}
+%\usepackage[ruled,vlined]{algorithm2e}
+%\usepackage{epsfig}
+%\usepackage{subfig}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{mdwlist}
+\usepackage{cite}
+\usepackage{listings}
+\usepackage{enumitem}
+\usepackage{dblfloatfix}
+\usepackage{comment}
+% This fixes references from going past end of line
+\usepackage[hyphens]{url}
+\usepackage[pdftex,hidelinks]{hyperref}
+\usepackage{xspace}
+
+\usepackage{enumitem}
+\setlist{topsep=4pt,itemsep=2pt,parsep=2pt}
+\renewcommand{\paragraph}[1]{\smallskip\noindent\textbf{#1}}
+
+% USE IF NECESSARY -- Throws out first page
+\usepackage{atbegshi}% http://ctan.org/pkg/atbegshi
+\AtBeginDocument{\AtBeginShipoutNext{\AtBeginShipoutDiscard}}
+
+% This code reduces the use of figure only pages
+%\renewcommand{\textfraction}{0.15}
+%\renewcommand{\floatpagefraction}{0.7}
+%\renewcommand{\dblfloatpagefraction}{0.7}
+
+\newcommand{\XXX}[1][]{{\color{red} XXX: #1}\xspace}
+%\newcommand{\XXX}[1][]{}
+
+\newcommand{\doi}{XXXDOI}
+
+\newcommand{\CHK}{\checkmark}
+
+%\textheight 8.875in
+%\textwidth 6.875in
+%\topmargin 0.6in
+
+\begin{document}
+\title{Kepler-XSEDE: A Scalable Workflow Framework}
+\author[1]{Shweta Purawat}
+\author[2]{Kevin Khuong}
+\author[2]{Parth Shah}
+\author[1]{Shava Smallen}
+\author[1]{Ilkay Altintas}
+\affil[1]{San Diego Supercomputer Center, University of California, San Diego, USA}
+\affil[2]{Department of Computer Science and Engineering, University of California, San Diego, USA}
+\thanks{Kevin Khuong and Parth Shah contributed equally to this work.}
+\renewcommand\Authands{ and }
+\date{}
+\maketitle
+\thispagestyle{empty}
+
+% XXX: REMOVE ME FOR FINAL DRAFT
+\thispagestyle{plain}
+\pagestyle{plain}
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+\begin{abstract}
+\input{abstract}
+\end{abstract}
+{\bf Keywords:}
+\input{keywords}
+
+\input{references}
+\end{document}
