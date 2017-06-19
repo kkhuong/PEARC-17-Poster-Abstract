@@ -1,6 +1,8 @@
-install:
-    - sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended 
-    - sudo apt-get install chktex
+os: osx
+language: generic
 
-script:
-    - make
+install:
+  - make
+
+after_install:
+  - make clean
