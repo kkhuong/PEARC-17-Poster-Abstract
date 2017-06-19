@@ -1,6 +1,9 @@
 os: osx
 language: generic
 
+before_install:
+  - sudo apt-get install -y texlive
+
 install:
   - make
 
